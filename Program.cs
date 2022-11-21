@@ -1,5 +1,6 @@
 ﻿MakeShapes();
 MakeStacks();
+MakeUsers();
 
 void MakeShapes()
 {
@@ -38,4 +39,24 @@ void MakeStacks()
     {
         Console.WriteLine(myStack.Pop());
     }
+}
+
+void MakeUsers()
+{
+    User me = new User();
+    me.FirstName = "Tom";
+    me.LastName = "Edward";
+
+    User you = new User();
+    you.FirstName = "Sophia";
+    you.LastName = "Diggy";
+
+    List<User> users = new List<User>() { me, you };
+
+    User searchItem = new User();
+    searchItem.FirstName = "Sophia";
+    searchItem.LastName = "Diggy";
+
+    Console.WriteLine(searchItem);
+    
 }
