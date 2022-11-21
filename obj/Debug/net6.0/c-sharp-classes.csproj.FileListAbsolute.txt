@@ -1,0 +1,15 @@
+/Users/tomharris/Developer/c-sharp-classes/bin/Debug/net6.0/c-sharp-classes
+/Users/tomharris/Developer/c-sharp-classes/bin/Debug/net6.0/c-sharp-classes.deps.json
+/Users/tomharris/Developer/c-sharp-classes/bin/Debug/net6.0/c-sharp-classes.runtimeconfig.json
+/Users/tomharris/Developer/c-sharp-classes/bin/Debug/net6.0/c-sharp-classes.dll
+/Users/tomharris/Developer/c-sharp-classes/bin/Debug/net6.0/c-sharp-classes.pdb
+/Users/tomharris/Developer/c-sharp-classes/obj/Debug/net6.0/c-sharp-classes.csproj.AssemblyReference.cache
+/Users/tomharris/Developer/c-sharp-classes/obj/Debug/net6.0/c-sharp-classes.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tomharris/Developer/c-sharp-classes/obj/Debug/net6.0/c-sharp-classes.AssemblyInfoInputs.cache
+/Users/tomharris/Developer/c-sharp-classes/obj/Debug/net6.0/c-sharp-classes.AssemblyInfo.cs
+/Users/tomharris/Developer/c-sharp-classes/obj/Debug/net6.0/c-sharp-classes.csproj.CoreCompileInputs.cache
+/Users/tomharris/Developer/c-sharp-classes/obj/Debug/net6.0/c-sharp-classes.dll
+/Users/tomharris/Developer/c-sharp-classes/obj/Debug/net6.0/refint/c-sharp-classes.dll
+/Users/tomharris/Developer/c-sharp-classes/obj/Debug/net6.0/c-sharp-classes.pdb
+/Users/tomharris/Developer/c-sharp-classes/obj/Debug/net6.0/c-sharp-classes.genruntimeconfig.cache
+/Users/tomharris/Developer/c-sharp-classes/obj/Debug/net6.0/ref/c-sharp-classes.dll
