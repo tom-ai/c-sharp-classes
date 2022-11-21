@@ -60,3 +60,18 @@ void MakeUsers()
     Console.WriteLine(User.GetUserPosition(users, searchItem));
     Console.WriteLine(User.GetUserObject(users, searchItem));
 }
+
+void RefVsOut()
+{
+    // setup
+    int x = 50;
+    Test(x);
+
+    // what will the value of x be?
+    Console.WriteLine(x);
+
+    void Test(int i)
+    {
+        i++;
+    }
+}
