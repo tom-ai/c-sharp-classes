@@ -1,14 +1,15 @@
 class Ball
 {
-    private double radius;
+    public double Radius { get; set; }
+
     public Ball(double radius)
     {
-        this.radius = radius;
+        Radius = radius;
     }
 
     public double Volume()
     {
-        double volume = (4.0 / 3 * Math.PI * Math.Pow(radius, 3));
+        double volume = (4.0 / 3 * Math.PI * Math.Pow(Radius, 3));
         return Math.Round(volume, 2);
     }
 }
