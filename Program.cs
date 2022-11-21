@@ -57,6 +57,6 @@ void MakeUsers()
     searchItem.FirstName = "Sophia";
     searchItem.LastName = "Diggy";
 
-    Console.WriteLine(searchItem);
-    
+    Console.WriteLine(User.GetUserPosition(users, searchItem));
+    Console.WriteLine(User.GetUserObject(users, searchItem));
 }

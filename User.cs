@@ -23,7 +23,7 @@ public class User
     {
         return this.FullName;
     }
-    public static int Find(List<User> users, User user)
+    public static int GetUserPosition(List<User> users, User user)
     {
         for (int i = 0; i < users.Count; i++)
         {
@@ -35,7 +35,7 @@ public class User
         return -1;
     }
 
-    public static User GetUserFromList(List<User> users, User user)
+    public static User GetUserObject(List<User> users, User user)
     {
         foreach (User u in users)
         {
