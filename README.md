@@ -8,4 +8,4 @@ A `Box` and a `Ball` class.
 
 ## Stacks
 
-A "Last In First Out" stack class that implements a stack for up to ten intergers.
+A "Last In First Out" stack class that implements a stack for any number of integers.
