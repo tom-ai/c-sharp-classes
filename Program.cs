@@ -53,6 +53,9 @@ void MakeUsers()
     you.FirstName = "Sophia";
     you.LastName = "Diggy";
 
+    // Instantiating an abstract class is not allowed:
+    // User other = new User();
+
     List<Student> students = new List<Student>() { me, you };
 
     foreach (Student s in students)

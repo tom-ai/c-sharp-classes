@@ -1,4 +1,4 @@
-public class User
+public abstract class User
 {
     public bool isVerified { get; set; } = false;
     public string? FirstName { get; set; }
@@ -11,8 +11,8 @@ public class User
         }
     }
 
-    public virtual void SayHello()
-    {
-        Console.WriteLine($"Hello, my name is {this.FullName}");
-    }
+    // Abstract class with abstract method
+    // forces derived class to have an implementation of SayHello()
+    public abstract void SayHello();
+
 }
