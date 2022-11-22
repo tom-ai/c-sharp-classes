@@ -1,18 +1,19 @@
 class Stack
 {
-    private int[] stack = new int[10];
+    private int[] stack;
     private int tos;
 
-    public Stack()
+    public Stack(int size)
     {
+        stack = new int[size];
         tos = -1;
     }
 
     public void Push(int item)
     {
-        if (tos == 9)
+        if (tos == stack.Count() - 1)
         {
-            Console.WriteLine(tos + " " + "Stack is full.");
+            Console.WriteLine("Stack is full.");
         }
         else
         {

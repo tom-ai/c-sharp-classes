@@ -1,5 +1,5 @@
-﻿MakeShapes();
-// MakeStacks();
+﻿// MakeShapes();
+MakeStacks();
 // MakeUsers();
 // UseRef();
 
@@ -24,14 +24,22 @@ void MakeShapes()
 
 void MakeStacks()
 {
-    Stack myStack = new Stack();
+    Stack myStack1 = new Stack(10);
+    Stack myStack2 = new Stack(10);
 
-    for (int i = 0; i < 10; i++) myStack.Push(i);
+    for (int i = 0; i < 5; i++) myStack1.Push(i);
+    for (int i = 5; i < 10; i++) myStack2.Push(i);
 
-    Console.WriteLine("Each item popped off myStack: ");
-    for (int i = 0; i < 10; i++)
+    Console.WriteLine("Each item popped off myStack1: ");
+    for (int i = 0; i < 5; i++)
     {
-        Console.WriteLine(myStack.Pop());
+        Console.WriteLine(myStack1.Pop());
+    }
+
+    Console.WriteLine("Each item popped off myStack2: ");
+    for (int i = 5; i < 10; i++)
+    {
+        Console.WriteLine(myStack2.Pop());
     }
 }
 
