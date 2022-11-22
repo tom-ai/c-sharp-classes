@@ -2,6 +2,6 @@ class Student : User
 {
     public override void SayHello()
     {
-        Console.WriteLine($"Hey, my name is {this.FullName} - I am a student");
+        Console.WriteLine($"Hi, I am student. My name is {this.FullName}");
     }
 }

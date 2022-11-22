@@ -49,19 +49,19 @@ void MakeUsers()
     me.FirstName = "Tom";
     me.LastName = "Edward";
 
-    Student you = new Student();
+    Teacher you = new Teacher();
     you.FirstName = "Sophia";
     you.LastName = "Diggy";
 
-    // Instantiating an abstract class is not allowed:
-    // User other = new User();
+    User other = new User();
+    other.FirstName = "John";
+    other.LastName = "Smith";
 
-    List<Student> students = new List<Student>() { me, you };
+    List<User> users = new List<User>() { me, you, other };
 
-    foreach (Student s in students)
+    foreach (User u in users)
     {
-        s.isVerified = true;
-        s.SayHello();
+        u.SayHello(); // implements derived versions of SayHello()
     }
 }
 
