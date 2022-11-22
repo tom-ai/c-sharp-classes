@@ -1,8 +1,15 @@
 public class User
 {
+    public string? FirstName { get; }
+    public string? LastName { get; }
     public bool isVerified { get; set; } = false;
-    public string? FirstName { get; set; }
-    public string? LastName { get; set; }
+
+    public User(string fn, string ln)
+    {
+        FirstName = fn; // readonly property accesible from base class
+        LastName = ln; // readonly property accesible from base class
+    }
+
     public string FullName
     {
         get

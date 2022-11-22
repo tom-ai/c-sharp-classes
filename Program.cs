@@ -49,9 +49,7 @@ void MakeUsers()
 
     Teacher you = new Teacher("Sophia", "Diggy");
 
-    User other = new User(); // no constructor with params on user yet
-    other.FirstName = "John";
-    other.LastName = "Smith";
+    User other = new User("John", "Smith");
 
     List<User> users = new List<User>() { me, you, other };
 

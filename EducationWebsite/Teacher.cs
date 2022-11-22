@@ -1,9 +1,8 @@
 public class Teacher : User
 {
-    public Teacher(string fn, string ln)
+    public Teacher(string fn, string ln) : base(fn, ln)
     {
-        base.FirstName = fn;
-        base.LastName = ln;
+
     }
     public override void SayHello()
     {
