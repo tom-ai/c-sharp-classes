@@ -46,16 +46,15 @@ void MakeStacks()
 void MakeUsers()
 {
     Student me = new Student("Tommy", "Edward");
-
     Teacher you = new Teacher("Sophia", "Diggy");
-
     User other = new User("John", "Smith");
+    ITalk them = new Student("Ali", "Fab"); // implements interface
 
     List<User> users = new List<User>() { me, you, other };
 
     foreach (User u in users)
     {
-        u.SayHello(); // implements derived versions of SayHello()
+        u.sayHello(); // implements derived versions of SayHello()
     }
 }
 

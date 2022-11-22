@@ -1,4 +1,4 @@
-public class User
+public class User : ITalk
 {
     public string? FirstName { get; }
     public string? LastName { get; }
@@ -18,7 +18,7 @@ public class User
         }
     }
 
-    public virtual void SayHello()
+    public virtual void sayHello()
     {
         Console.WriteLine("Hi, I am a general user");
     }
