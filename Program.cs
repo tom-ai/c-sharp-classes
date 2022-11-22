@@ -1,31 +1,22 @@
 ﻿MakeShapes();
-MakeStacks();
-MakeUsers();
+// MakeStacks();
+// MakeUsers();
+// UseRef();
 
 void MakeShapes()
 {
-    Box myBox = new Box(2, 2, 2);
     Ball myBall = new Ball(2);
+    Console.WriteLine($"The volume of myBall is {myBall.Volume()}");
 
-    List<int> widths = new List<int>() { 2, 3, 4 };
-    List<int> heights = new List<int>() { 2, 3, 4 };
-    List<int> depths = new List<int>() { 2, 3, 4 };
+    List<Box> overloadedBoxes = new List<Box>();
+    overloadedBoxes.Add(new Box(15, 10, 10));
+    overloadedBoxes.Add(new Box());
+    overloadedBoxes.Add(new Box(length: 10));
 
-    List<Box> boxes = new List<Box>();
-
-    for (int i = 0; i < widths.Count; i++)
-    {
-        Box box = new Box(widths[i], heights[i], depths[i]);
-        boxes.Add(box);
-    }
-
-    foreach (Box box in boxes)
+    foreach (Box box in overloadedBoxes)
     {
         Console.WriteLine(box.Volume());
     }
-
-    Console.WriteLine($"The volume of myBox is {myBox.Volume()}");
-    Console.WriteLine($"The volume of myBall is {myBall.Volume()}");
 }
 
 void MakeStacks()
@@ -61,17 +52,19 @@ void MakeUsers()
     Console.WriteLine(User.GetUserObject(users, searchItem));
 }
 
-void RefVsOut()
+void UseRef()
 {
-    // setup
-    int x = 50;
-    Test(x);
+    // with ref, the value of x will increase
+    // without ref, the i is only know within the scope of Test
+    // and therefore x remains untouched
 
-    // what will the value of x be?
+    int x = 50;
+    Test(ref x);
     Console.WriteLine(x);
 
-    void Test(int i)
+    void Test(ref int i)
     {
         i++;
     }
+
 }

@@ -10,6 +10,18 @@ class Box
         Height = height;
         Depth = depth;
     }
+    
+    public Box()
+    {
+        Width = -1;
+        Height = -1;
+        Depth = -1;
+    }
+
+    public Box(double length)
+    {
+        Width = Height = Depth = length;
+    }
     public double Volume()
     {
         return Width * Depth * Height;
