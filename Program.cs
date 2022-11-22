@@ -1,6 +1,6 @@
 ﻿// MakeShapes();
-MakeStacks();
-// MakeUsers();
+// MakeStacks();
+MakeUsers();
 // UseRef();
 
 void MakeShapes()
@@ -45,22 +45,20 @@ void MakeStacks()
 
 void MakeUsers()
 {
-    User me = new User();
+    Student me = new Student();
     me.FirstName = "Tom";
     me.LastName = "Edward";
 
-    User you = new User();
+    Student you = new Student();
     you.FirstName = "Sophia";
     you.LastName = "Diggy";
 
-    List<User> users = new List<User>() { me, you };
+    List<Student> students = new List<Student>() { me, you };
 
-    User searchItem = new User();
-    searchItem.FirstName = "Sophia";
-    searchItem.LastName = "Diggy";
-
-    Console.WriteLine(User.GetUserPosition(users, searchItem));
-    Console.WriteLine(User.GetUserObject(users, searchItem));
+    foreach (Student s in students)
+    {
+        Console.WriteLine(s.FullName);
+    }
 }
 
 void UseRef()
