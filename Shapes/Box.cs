@@ -4,13 +4,19 @@ class Box
     public double Height { get; set; }
     public double Depth { get; set; }
 
+    public Box(Box o)
+    {
+        Width = o.Width;
+        Height = o.Height;
+        Depth = o.Depth;
+    }
     public Box(double width, double height, double depth)
     {
         Width = width;
         Height = height;
         Depth = depth;
     }
-    
+
     public Box()
     {
         Width = -1;

@@ -17,6 +17,9 @@ void MakeShapes()
     {
         Console.WriteLine(box.Volume());
     }
+
+    Box myClone = new Box(overloadedBoxes[0]);
+    Console.WriteLine($"myClone vol: {myClone.Volume()} should be {overloadedBoxes[0].Volume()}");
 }
 
 void MakeStacks()
