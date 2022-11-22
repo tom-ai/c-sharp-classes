@@ -57,7 +57,8 @@ void MakeUsers()
 
     foreach (Student s in students)
     {
-        Console.WriteLine(s.FullName);
+        s.isVerified = true;
+        s.SayHello();
     }
 }
 

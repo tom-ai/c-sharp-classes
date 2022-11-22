@@ -10,4 +10,9 @@ public class User
             return $"{FirstName} {LastName}";
         }
     }
+
+    public virtual void SayHello()
+    {
+        Console.WriteLine($"Hello, my name is {this.FullName}");
+    }
 }
