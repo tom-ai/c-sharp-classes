@@ -10,7 +10,7 @@ public class User
             return $"{FirstName} {LastName}";
         }
     }
-    
+
     public virtual void SayHello()
     {
         Console.WriteLine("Hi, I am a general user");

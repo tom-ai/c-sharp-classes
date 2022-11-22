@@ -45,15 +45,11 @@ void MakeStacks()
 
 void MakeUsers()
 {
-    Student me = new Student();
-    me.FirstName = "Tom";
-    me.LastName = "Edward";
+    Student me = new Student("Tommy", "Edward");
 
-    Teacher you = new Teacher();
-    you.FirstName = "Sophia";
-    you.LastName = "Diggy";
+    Teacher you = new Teacher("Sophia", "Diggy");
 
-    User other = new User();
+    User other = new User(); // no constructor with params on user yet
     other.FirstName = "John";
     other.LastName = "Smith";
 
