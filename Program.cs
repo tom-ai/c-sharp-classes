@@ -10,6 +10,7 @@ void MakeMoreShapes()
     // Figure f = new Figure(10, 10);
     Rectangle r = new Rectangle(9, 5);
     Triangle t = new Triangle(10, 8);
+    RectangleOnWheels rw = new RectangleOnWheels(9, 5);
 
     // loop through with foreach like before
 
@@ -30,6 +31,8 @@ void MakeMoreShapes()
     figref = t;
     Console.WriteLine($"Area is {figref.Area()}");
 
+    figref = rw;
+    Console.WriteLine($"Area is {figref.Area()}");
 }
 
 void DemoShipping()

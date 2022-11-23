@@ -33,3 +33,15 @@ public class Triangle : Figure
         return Dim1 * Dim2 / 2;
     }
 }
+
+public class RectangleOnWheels : Rectangle
+{
+    public RectangleOnWheels(double a, double b) : base(a, b)
+    {
+    }
+
+    public override double Area()
+    {
+        return Dim1 * Dim2 * 10;
+    }
+}
