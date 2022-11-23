@@ -10,3 +10,11 @@ public class Client : ICallback
         Console.WriteLine("This is an additional class not defined in the interface");
     }
 }
+
+public class ClientA
+{
+    public interface NestedIF
+    {
+        public bool isNotNegative(int x);
+    }
+}

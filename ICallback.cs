@@ -1,4 +1,4 @@
 public interface ICallback
 {
-    void Callback (int x);
+    public void Callback(int x);
 }

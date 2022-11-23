@@ -6,3 +6,11 @@ public class AnotherClient : ICallback
         Console.WriteLine("x squared is " + x * x);
     }
 }
+
+public class ClientB : ClientA.NestedIF
+{
+    public bool isNotNegative(int x)
+    {
+        return x < 0 ? false : true;
+    }
+}

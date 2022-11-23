@@ -17,6 +17,18 @@ void TestInterface()
 
     c.Callback(42); // Because only the method signature is defined, the implementation
                     // can be different.
+
+    // use a nested interface reference
+    ClientA.NestedIF nesty = new ClientB();
+
+    if (nesty.isNotNegative(10))
+    {
+        Console.WriteLine("10 is not negative");
+    }
+    else if (nesty.isNotNegative(-10))
+    {
+        Console.WriteLine("this won't be displayed");
+    }
 }
 
 
