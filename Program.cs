@@ -20,6 +20,7 @@ void MakeMoreShapes()
     Figure t = new Triangle(10, 8); // type inferred as Figure
     RectangleOnWheels rw = new RectangleOnWheels(9, 5);
 
+
     // This is not allowed:
     /*     
     r.x = 5;
