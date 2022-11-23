@@ -1,4 +1,4 @@
-class Box
+public class Box
 {
     public double Width { get; set; }
     public double Height { get; set; }
@@ -28,8 +28,22 @@ class Box
     {
         Width = Height = Depth = length;
     }
+
     public double Volume()
     {
         return Width * Depth * Height;
+    }
+
+}
+
+public class BoxWeight : Box
+{
+    public double Weight { get; set; }
+    public BoxWeight(double width, double height, double depth, double weight)
+    {
+        Width = width;
+        Height = height;
+        Depth = depth;
+        Weight = weight;
     }
 }

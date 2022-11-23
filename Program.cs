@@ -1,25 +1,45 @@
-﻿// MakeShapes();
+﻿MakeShapes();
 // MakeStacks();
-MakeUsers();
+// MakeUsers();
 // UseRef();
 
 void MakeShapes()
 {
-    Ball myBall = new Ball(2);
-    Console.WriteLine($"The volume of myBall is {myBall.Volume()}");
+    // Ball myBall = new Ball(2);
+    // Console.WriteLine($"The volume of myBall is {myBall.Volume()}");
 
-    List<Box> overloadedBoxes = new List<Box>();
-    overloadedBoxes.Add(new Box(15, 10, 10));
-    overloadedBoxes.Add(new Box());
-    overloadedBoxes.Add(new Box(length: 10));
+    // List<Box> boxes = new List<Box>();
+    // boxes.Add(new Box(15, 10, 10));
+    // boxes.Add(new Box());
+    // boxes.Add(new Box(length: 10));
 
-    foreach (Box box in overloadedBoxes)
-    {
-        Console.WriteLine(box.Volume());
-    }
+    // foreach (Box box in boxes)
+    // {
+    //     Console.WriteLine(box.Volume());
+    // }
 
-    Box myClone = new Box(overloadedBoxes[0]);
-    Console.WriteLine($"myClone vol: {myClone.Volume()} should be {overloadedBoxes[0].Volume()}");
+    // Box myClone = new Box(overloadedBoxes[0]);
+    // Console.WriteLine($"myClone vol: {myClone.Volume()} should be {overloadedBoxes[0].Volume()}");
+
+    // BoxWeight myWeightedBox = new BoxWeight(15, 15, 15, 450);
+    // Box box = new Box();
+
+    // double vol = myWeightedBox.Volume();
+    // Console.WriteLine($"Volume of box is {box.Volume()}"); s
+    // Console.WriteLine($"Volume of weighted box is {vol}");
+    // Console.WriteLine($"Weight of weighted box is {myWeightedBox.Weight}");
+
+    // box = myWeightedBox;
+
+    // vol = box.Volume();
+    // Console.WriteLine($"Volume of box is {box.Volume()}"); // this proves that value has passed by reference
+
+
+
+
+
+
+
 }
 
 void MakeStacks()
@@ -74,3 +94,5 @@ void UseRef()
     }
 
 }
+
+
