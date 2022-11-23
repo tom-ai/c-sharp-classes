@@ -7,16 +7,16 @@ MakeMoreShapes();
 
 void MakeMoreShapes()
 {
-    // Figure f = new Figure(10, 10);
-    Rectangle r = new Rectangle(9, 5);
-    Triangle t = new Triangle(10, 8);
+    Rectangle r = new Rectangle(9, 5); // type inferred as Rectangle
+    Triangle t = new Triangle(10, 8); // type inferred as Triangle
     RectangleOnWheels rw = new RectangleOnWheels(9, 5);
 
-    // loop through with foreach like before
+    // Becuase types are inferred, the local variables that
+    // exist on the derived classes (i.e. int x; and int y;)
+    // are accessible:
 
-    // or...
-
-    // use a base class reference with systematic approach
+    r.x = 5;
+    t.y = 5;
 
     Figure figref;
 

@@ -8,12 +8,14 @@ public abstract class Figure
         Dim1 = a;
         Dim2 = b;
     }
+    public void testMethod() { }
 
     public abstract double Area();
 }
 
 public class Rectangle : Figure
 {
+    public int x { get; set; }
     public Rectangle(double a, double b) : base(a, b) { }
 
     public sealed override double Area()
@@ -25,6 +27,8 @@ public class Rectangle : Figure
 
 public class Triangle : Figure
 {
+    public int y { get; set; }
+
     public Triangle(double a, double b) : base(a, b) { }
 
     public override double Area()
