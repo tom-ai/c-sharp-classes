@@ -25,13 +25,13 @@ void MakeMoreShapes()
     Figure figref;
 
     figref = f;
-    Console.WriteLine($"Area is {f.Area()}");
+    Console.WriteLine($"Area is {figref.Area()}");
 
     figref = r;
-    Console.WriteLine($"Area is {r.Area()}");
+    Console.WriteLine($"Area is {figref.Area()}");
 
     figref = t;
-    Console.WriteLine($"Area is {t.Area()}");
+    Console.WriteLine($"Area is {figref.Area()}");
 
 }
 
