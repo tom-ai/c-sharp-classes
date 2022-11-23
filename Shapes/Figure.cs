@@ -16,7 +16,7 @@ public class Rectangle : Figure
 {
     public Rectangle(double a, double b) : base(a, b) { }
 
-    public override double Area()
+    public sealed override double Area()
     {
         Console.WriteLine("Inside Area for Rectangle");
         return Dim1 * Dim2;
@@ -40,8 +40,10 @@ public class RectangleOnWheels : Rectangle
     {
     }
 
+    /*
     public override double Area()
     {
         return Dim1 * Dim2 * 10;
     }
+    */ // COMPILE ERROR because Area method on base class is "sealed"
 }
