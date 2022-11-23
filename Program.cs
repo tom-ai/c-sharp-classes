@@ -7,14 +7,9 @@ MakeMoreShapes();
 
 void MakeMoreShapes()
 {
-    Figure f = new Figure(10, 10);
+    // Figure f = new Figure(10, 10);
     Rectangle r = new Rectangle(9, 5);
     Triangle t = new Triangle(10, 8);
-
-    List<Figure> figures = new List<Figure>();
-    figures.Add(f);
-    figures.Add(r);
-    figures.Add(t);
 
     // loop through with foreach like before
 
@@ -24,8 +19,10 @@ void MakeMoreShapes()
 
     Figure figref;
 
+    /*
     figref = f;
-    Console.WriteLine($"Area is {figref.Area()}");
+    Console.WriteLine($"Area is {figref.Area()}"); // will cause runtime error
+    */
 
     figref = r;
     Console.WriteLine($"Area is {figref.Area()}");

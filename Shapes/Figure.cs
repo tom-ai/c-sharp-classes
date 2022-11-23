@@ -1,4 +1,4 @@
-public class Figure
+public abstract class Figure
 {
     public double Dim1 { get; set; }
     public double Dim2 { get; set; }
@@ -9,11 +9,7 @@ public class Figure
         Dim2 = b;
     }
 
-    public virtual double Area()
-    {
-        Console.WriteLine("I do not have a shape yet");
-        return 0;
-    }
+    public abstract double Area();
 }
 
 public class Rectangle : Figure
