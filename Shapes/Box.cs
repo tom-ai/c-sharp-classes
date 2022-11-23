@@ -39,11 +39,8 @@ public class Box
 public class BoxWeight : Box
 {
     public double Weight { get; set; }
-    public BoxWeight(double width, double height, double depth, double weight)
+    public BoxWeight(double width, double height, double depth, double weight) : base(width, height, depth)
     {
-        Width = width;
-        Height = height;
-        Depth = depth;
         Weight = weight;
     }
 }
