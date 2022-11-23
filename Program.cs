@@ -7,16 +7,19 @@ MakeMoreShapes();
 
 void MakeMoreShapes()
 {
-    Rectangle r = new Rectangle(9, 5); // type inferred as Rectangle
-    Triangle t = new Triangle(10, 8); // type inferred as Triangle
+    Figure r = new Rectangle(9, 5); // type inferred as Figure
+    Figure t = new Triangle(10, 8); // type inferred as Figure
     RectangleOnWheels rw = new RectangleOnWheels(9, 5);
 
-    // Becuase types are inferred, the local variables that
-    // exist on the derived classes (i.e. int x; and int y;)
-    // are accessible:
-
+    // This is not allowed:
+    /*     
     r.x = 5;
     t.y = 5;
+    */
+
+    // Becuase types are inferred as the BASE class (i.e. Figure)
+    // the variables are not accessible becuase they exist only
+    // on the derived classes.
 
     Figure figref;
 
