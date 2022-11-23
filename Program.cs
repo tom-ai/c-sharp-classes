@@ -9,8 +9,14 @@ TestInterface();
 void TestInterface()
 {
     ICallback c = new Client();
+    AnotherClient ac = new AnotherClient();
+
     c.Callback(42);
-    // c.AnotherMethod does not exist becuase it is not defined in the interface type!
+
+    c = ac; // c now refers to AnotherClient
+
+    c.Callback(42); // Because only the method signature is defined, the implementation
+                    // can be different.
 }
 
 
