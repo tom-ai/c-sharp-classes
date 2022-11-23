@@ -2,7 +2,38 @@
 // MakeStacks();
 // MakeUsers(); // demos overide methods
 // UseRef();
-DemoShipping(); // demos inheritance, constructors calling their base classes
+// DemoShipping(); // demos inheritance, constructors calling their base classes
+MakeMoreShapes();
+
+void MakeMoreShapes()
+{
+    Figure f = new Figure(10, 10);
+    Rectangle r = new Rectangle(9, 5);
+    Triangle t = new Triangle(10, 8);
+
+    List<Figure> figures = new List<Figure>();
+    figures.Add(f);
+    figures.Add(r);
+    figures.Add(t);
+
+    // loop through with foreach like before
+
+    // or...
+
+    // use a base class reference with systematic approach
+
+    Figure figref;
+
+    figref = f;
+    Console.WriteLine($"Area is {f.Area()}");
+
+    figref = r;
+    Console.WriteLine($"Area is {r.Area()}");
+
+    figref = t;
+    Console.WriteLine($"Area is {t.Area()}");
+
+}
 
 void DemoShipping()
 {
