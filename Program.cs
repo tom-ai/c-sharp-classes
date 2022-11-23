@@ -6,7 +6,41 @@
 // MakeMoreShapes();
 // TestInterface();
 // FixedStack(); // with interface
-DynamicStack(); // with interface
+// DynamicStack(); // with interface
+StackWithInterfaceReference();
+
+void StackWithInterfaceReference()
+{
+    IIntStack myStack; // creates an interface reference variable
+    DynamicStack ds = new DynamicStack(5);
+    FixedStack fs = new FixedStack(8);
+
+    myStack = ds; // load dynamic stack referring it to the interface
+    for (int i = 0; i < 12; i++)
+    {
+        myStack.Push(i);
+    }
+
+    myStack = fs;
+    for (int i = 0; i < 8; i++)
+    {
+        myStack.Push(i);
+    }
+
+    myStack = ds;
+    for (int i = 0; i < 12; i++)
+    {
+        Console.WriteLine(myStack.Pop());
+    }
+
+    myStack = fs;
+    for (int i = 0; i < 8; i++)
+    {
+        Console.WriteLine(myStack.Pop());
+    }
+
+
+}
 
 void DynamicStack()
 {
