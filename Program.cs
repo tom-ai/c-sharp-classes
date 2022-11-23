@@ -3,7 +3,16 @@
 // MakeUsers(); // demos overide methods
 // UseRef();
 // DemoShipping(); // demos inheritance, constructors calling their base classes
-MakeMoreShapes();
+// MakeMoreShapes();
+TestInterface();
+
+void TestInterface()
+{
+    ICallback c = new Client();
+    c.Callback(42);
+    // c.AnotherMethod does not exist becuase it is not defined in the interface type!
+}
+
 
 void MakeMoreShapes()
 {
