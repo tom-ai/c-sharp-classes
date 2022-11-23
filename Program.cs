@@ -4,7 +4,52 @@
 // UseRef();
 // DemoShipping(); // demos inheritance, constructors calling their base classes
 // MakeMoreShapes();
-TestInterface();
+// TestInterface();
+// FixedStack(); // with interface
+DynamicStack(); // with interface
+
+void DynamicStack()
+{
+    DynamicStack myStack1 = new DynamicStack(5);
+    DynamicStack myStack2 = new DynamicStack(8);
+
+    // in a fixed stack, these would be over the allocated size
+    for (int i = 0; i < 12; i++) myStack1.Push(i);
+    for (int i = 0; i < 20; i++) myStack2.Push(i);
+
+    Console.WriteLine("Each item popped off myStack1: ");
+    for (int i = 0; i < 12; i++)
+    {
+        Console.WriteLine(myStack1.Pop());
+    }
+
+    Console.WriteLine("Each item popped off myStack2: ");
+    for (int i = 0; i < 20; i++)
+    {
+        Console.WriteLine(myStack2.Pop());
+    }
+}
+
+void FixedStack()
+{
+    FixedStack myStack1 = new FixedStack(5);
+    FixedStack myStack2 = new FixedStack(8);
+
+    for (int i = 0; i < 5; i++) myStack1.Push(i);
+    for (int i = 0; i < 8; i++) myStack2.Push(i);
+
+    Console.WriteLine("Each item popped off myStack1: ");
+    for (int i = 0; i < 5; i++)
+    {
+        Console.WriteLine(myStack1.Pop());
+    }
+
+    Console.WriteLine("Each item popped off myStack2: ");
+    for (int i = 0; i < 8; i++)
+    {
+        Console.WriteLine(myStack2.Pop());
+    }
+}
 
 void TestInterface()
 {
